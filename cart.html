@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--style.css-->
+    <link href="style.css" rel="stylesheet">
+    <!--Google Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <title>Cart</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-color">
+            <!--Brand Name-->
+            <a class="navbar-brand spicyrice-font" href="homepage.html">Project K Aparrel</a>
+            <!--Collapse Function-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Navbar Options-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--Homepage Link-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html">Homepage <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--About Page Link-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About </a>
+                    </li>
+                    <!--Catalog Dropdown-->
+                    <li class="nav-item btn-group dropdown">
+                        <button id="dropdownMenuButton" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</button>
+                        <!--Menu Items-->
+                        <div class="dropdown-menu dropdown-edit" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="catalog1.html">Shirts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="catalog2.html">Shoes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="catalog3.html">Accessories</a>
+                        </div>
+                    </li>
+                    <!--Cart Page Link-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--Hero-->
+    <div class="jumbotron">
+            <h1 class="display-4 text-center text-color-grey spicyrice-font text-padding-down">~~ Your Cart ~~</h1>
+            <h3 class="text-center text-color-grey spicyrice-font">Head back to a previous page if you wish to continue shopping</h3>
+        </div>    
+
+    <!--Cart Table-->
+    <table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">Item Count</th>
+      <th scope="col">Item Name</th>
+      <th scope="col"></th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Wakanda Forever Dame 4s</td>
+      <td></td>
+      <td>10lbs Vibranium</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Game Over Hoodie</td>
+      <td></td>
+      <td>$69.99</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Infinity Gauntlet</td>
+      <td></td>
+      <td>One soul</td>
+    </tr>
+  </tbody>
+    </table>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Proceed to Checkout
+</button>
+
+<!-- Modal (Checkout) -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <!--Modal Header-->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Modal Body-->
+      <div class="modal-body">
+          <fieldset>
+              <!--First&Last Name-->
+              <div class="row">
+                  <div class="col-md-6 mb-3">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control" id="firstname" placeholder value required>
+                      <div class="invalid-feedback">Valid first name is required</div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder value required>
+                      <div class="invalid-feedback">Valid last name is required</div>
+                  </div>
+              </div>
+              <!--Email Address-->
+              <div class="mb-3">
+                <label for="email">Email<span class="text-muted">(Optional)</span>
+                </label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">Please enter a valid email address</div>
+              </div>
+              <!--Street Address-->
+              <div class="mb-3">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="### street name" required>
+                  <div class="invalid-feedback">Please enter valid shipping address</div>
+              </div>
+              <!--Country/Region/Zip-->
+              <div class="row">
+                    <!--Country-->
+                    <div class="col-md-5 mb-3">
+                      <label for="country">Country</label>
+                      <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+                        <option>Other</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+                    <!--Region-->
+                    <div class="col-md-4 mb-3">
+                      <label for="state">Region</label>
+                      <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Choose...</option>
+                        <option>Northeast</option>
+                        <option>South</option>
+                        <option>Midwest</option>
+                        <option>Frontier</option>
+                        <option>Pacific</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+                    <!--Zipcode-->
+                    <div class="col-md-3 mb-3">
+                      <label for="zip">Zip</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+                    </div>
+                </div>
+            <!--Payment-->
+            <h4 class="mb-3">Payment</h4>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+            </div>
+            <div class="row">
+                <!--Name on card-->
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <!--Credit Card Number-->
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <!--Modal footer-->
+      <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Confirm Checkout</button>
+          </div>
+          </fieldset>  
+          
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

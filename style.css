@@ -1,0 +1,120 @@
+.navbar-nav li a {
+    line-height: 75px;
+    height:75px;
+    padding-top: 0;
+    padding: auto;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color:white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-color: slategrey;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.btn-outline-secondary {
+    color:rgba(255,255,255,.5);
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+}
+
+/*Homepage Jumborton*/
+.background-image{
+    background:url("../david-lezcano-225889-unsplash.jpg");
+    
+    height: 650px;
+    background-size:cover;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-color-white{
+    color:white;
+}
+
+.text-color-grey{
+    color:#343a40;
+}
+
+.spicyrice-font{
+    font-family: 'Spicy Rice', cursive;
+}
+
+.text-plain{
+    font-family: 'Aria';
+}
+
+/*Padding down 75px*/
+.text-padding-down{
+    padding-top:75px;
+}
+
+/*Background grey*/
+body{
+    background-color:#343a40;
+}
+
+/*Catalog picture size adjusment*/
+.image-edit{
+    height:300px;;
+}
+
+/*padding right 50px*/
+.text-padding-left{
+    padding-left:50px;
+}
+
+.text-color-white{
+    color:white;
+}
+
+/*padding center 25% both sides*/
+.text-padding-center{
+    padding-left:25%;
+    padding-right:25%;
+}
+
+/*padding down 35px*/
+.padding-down{
+    padding-top:35px;
+}
+
+.btn-primary {
+    color:#343a40;
+    background-color: white;
+    border-color: #343a40;
+}
+
+.table{
+    background-color:white;
+}

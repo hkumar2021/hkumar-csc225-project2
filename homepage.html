@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--style.css-->
+    <link href="style.css" rel="stylesheet">
+    <!--Google Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-color">
+        <!--Brand Name-->
+        <a class="navbar-brand spicyrice-font" href="homepage.html">Project K Aparrel</a>
+        <!--Collapse Function-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Navbar Options-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--Homepage Link-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Homepage <span class="sr-only">(current)</span></a>
+                </li>
+                <!--About Page Link-->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About </a>
+                </li>
+                <!--Catalog Dropdown-->
+                <li class="nav-item btn-group dropdown">
+                    <button id="dropdownMenuButton" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</button>
+                    <!--Menu Items-->
+                    <div class="dropdown-menu dropdown-edit" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="catalog1.html">Shirts</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="catalog2.html">Shoes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="catalog3.html">Accessories</a>
+                    </div>
+                </li>
+                <!--Cart Page Link-->
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <div class="jumbotron background-image text-color-white spicyrice-font text-center text-padding-down">
+        <h1 class="display-4">Welcome to Project K Aparrel</h1>
+        <h2 class="text-center text-padding-down">Looking for a limited amount of decent looking clothing for outrageous prices?</h2>
+        <h3 class="text-center text-padding-down">Your'e Welcome.</h3>
+    </div>
+
+    <!--Cards-->
+    <div class="container">
+        <div class="row spicyrice-font">
+            <div class="col-12 col-md-4 col-sm-12 order-md-first order-sm-first">
+                <!--Card1-->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top image-edit" src="../modern-essentials-798265-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shirts</h5>
+                        <p class="card-text text-center">Improve your shirt game</p>
+                        <a href="catalog1.html" class="btn btn-primary text-plain">Go to catalog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 order-md-2 order-sm-1">
+                <!--Card2-->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top image-edit" src="../devin-avery-624522-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shoes</h5>
+                        <p class="card-text text-center">What are thoooose?.</p>
+                        <a href="catalog2.html" class="btn btn-primary text-plain">Go to catalog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 order-md-3 order-sm-3">
+                <!--Card3-->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top image-edit" src="../hunters-race-412953-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Accessories</h5>
+                        <p class="card-text text-center">Iced out no stylist</p>
+                        <a href="catalog3.html" class="btn btn-primary text-plain">Go to catalog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
